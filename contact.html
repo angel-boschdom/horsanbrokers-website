@@ -5,10 +5,79 @@
     <title>Contact Us - Horsan Brokers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <!-- Optional: Include FontAwesome for Icon Library
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    -->
+    <style>
+        /* Additional styles for the contact page */
+        .contacts {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-info p {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        .contact-info svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            fill: #174222;
+        }
+
+        @media (max-width: 768px) {
+            .contact {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .contact img {
+                margin-right: 0;
+                margin-bottom: 15px;
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .contact-info p {
+                font-size: 14px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="logo">HB</div>
+        <div class="logo">
+            <img src="assets/logo.png" alt="Horsan Brokers Logo">
+        </div>
         <!-- Navigation Menu -->
         <nav>
             <div class="menu-icon" id="menu-icon">
@@ -28,14 +97,44 @@
         <h2>Contact Us</h2>
         <div class="contacts">
             <div class="contact">
-                <h3>Javier Sánchez - CEO</h3>
-                <p>Email: <a href="mailto:jsanchez@horsanbrokers.com">jsanchez@horsanbrokers.com</a></p>
-                <p>Tel: +0034 641122460</p>
+                <img src="assets/javier350x530.png" alt="Javier Sánchez - CEO">
+                <div class="contact-info">
+                    <h3>Javier Sánchez - CEO</h3>
+                    <p>
+                        <!-- Email Icon SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M20 4H4C2.897 4 2 4.897 2 6v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                        <a href="mailto:jsanchez@horsanbrokers.com">jsanchez@horsanbrokers.com</a>
+                    </p>
+                    <p>
+                        <!-- Telephone Icon SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.21.48 2.53.73 3.88.73a1 1 0 011 1v3.5a1 1 0 01-1 1C10.07 21 3 13.93 3 5.5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.35.25 2.67.73 3.88a1 1 0 01-.21 1.11l-2.2 2.2z"/>
+                        </svg>
+                        +0034 641122460
+                    </p>
+                </div>
             </div>
             <div class="contact">
-                <h3>Pablo Gil - COO</h3>
-                <p>Email: <a href="mailto:pablo@horsanbrokers.com">pablo@horsanbrokers.com</a></p>
-                <p>Tel: +0034 610212754</p>
+                <img src="assets/pablo350x530.png" alt="Pablo Gil - COO">
+                <div class="contact-info">
+                    <h3>Pablo Gil - COO</h3>
+                    <p>
+                        <!-- Email Icon SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M20 4H4C2.897 4 2 4.897 2 6v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                        <a href="mailto:pablo@horsanbrokers.com">pablo@horsanbrokers.com</a>
+                    </p>
+                    <p>
+                        <!-- Telephone Icon SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.21.48 2.53.73 3.88.73a1 1 0 011 1v3.5a1 1 0 01-1 1C10.07 21 3 13.93 3 5.5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.35.25 2.67.73 3.88a1 1 0 01-.21 1.11l-2.2 2.2z"/>
+                        </svg>
+                        +0034 610212754
+                    </p>
+                </div>
             </div>
         </div>
     </section>
