@@ -267,11 +267,6 @@ footer {
         display: flex;
     }
 
-    /* Adjust Landing Section */
-    .landing {
-        height: 60vh;
-    }
-
     .overlay h1 {
         font-size: 32px;
     }
