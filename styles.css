@@ -117,8 +117,10 @@ nav ul li a.active {
 /* Landing Section */
 .landing {
     position: relative;
-    height: 80vh;
-    background: url('assets/gaspump1125x780.png') no-repeat center center/cover;
+    height: calc(100vh - 120px); /* Full viewport height minus the header height */
+    background: url('assets/gaspump1125x780.png') no-repeat center center;
+    background-size: cover; /* Ensures the image covers the whole section */
+    overflow: hidden; /* Ensures the content doesn't spill out */
 }
 
 .overlay {
@@ -215,6 +217,12 @@ footer {
         height: 80px; /* Smaller header height for mobile */
     }
 
+    .landing {
+        height: calc(100vh - 80px); /* Adjust for smaller mobile header */
+        background-position: center center;
+        background-size: cover; /* Keeps it zoomed in and covering the section */
+    }
+    
     .logo img {
         max-width: 200px; /* Smaller logo for mobile */
         max-height: 60px;
