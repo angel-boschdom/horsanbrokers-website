@@ -95,7 +95,7 @@ nav ul li a.active {
 
 /* Change to X when active */
 .menu-icon.active .bar1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
 }
 
 .menu-icon.active .bar2 {
@@ -103,7 +103,7 @@ nav ul li a.active {
 }
 
 .menu-icon.active .bar3 {
-    transform: rotate(45deg) translate(-5px, -6px);
+    transform: rotate(45deg) translate(-9px, -6px);
 }
 
 /* Navigation Links */
